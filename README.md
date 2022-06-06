@@ -1,21 +1,14 @@
 # Template
 
-**TODO: Add description**
+An template for creating and running an elixir discord bot in railway
 
-## Installation
+## Local setup
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `template` to your list of dependencies in `mix.exs`:
+1. `git clone` this project
+2. `mix dev.setup` to clean, download and dependencies
+3.  Add the environment variables in `.env.example` with their respective values
+4. `mix start` to start the bot
 
-```elixir
-def deps do
-  [
-    {:template, "~> 0.1.0"}
-  ]
-end
-```
+## Railway
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/template>.
-
+**TODO ADD RAILWAY SETUP**

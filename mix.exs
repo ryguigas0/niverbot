@@ -29,7 +29,7 @@ defmodule Template.MixProject do
 
   defp aliases do
     [
-      "dev.build": ["clean", "deps.get", "compile"],
+      "dev.setup": ["clean", "deps.get", "compile"],
       start: ["run --no-halt"]
     ]
   end
