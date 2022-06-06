@@ -9,6 +9,7 @@ An template for creating and running an elixir discord bot in railway
 3.  Add the environment variables in `.env.example` with their respective values
 4. `mix start` to start the bot
 
-## Railway
+## Railway setup
+Use this button to
 
-**TODO ADD RAILWAY SETUP**
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/-dwGnw?referralCode=OXpg0O)
