@@ -3,7 +3,7 @@
 import Config
 
 config :nostrum,
-  token: System.get_env("DISCORD_BOT_KEY"),
+  token: System.get_env("DISCORD_BOT_TOKEN"),
   # Gateway intents needed to run this bot
   gateway_intents: [
     :direct_messages,
