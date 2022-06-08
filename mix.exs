@@ -24,13 +24,15 @@ defmodule Niverbot.MixProject do
   defp deps do
     [
       {:nostrum, "~> 0.6"},
-      {:timex, "~> 3.0"}
+      {:timex, "~> 3.0"},
+      {:ecto_sql, "~> 3.0"},
+      {:postgrex, ">= 0.0.0"}
     ]
   end
 
   defp aliases do
     [
-      "dev.setup": ["clean", "deps.get", "compile"],
+      "dev.build": ["clean", "deps.get", "compile"],
       start: ["run --no-halt"]
     ]
   end

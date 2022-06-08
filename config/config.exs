@@ -13,5 +13,7 @@ config :nostrum,
 
 config :niverbot, Niverbot, flag: System.get_env("DISCORD_BOT_FLAG")
 
+config :niverbot, ecto_repos: [Niverbot.Repo]
+
 # Configurations according to environment
 import_config("#{Mix.env()}.exs")

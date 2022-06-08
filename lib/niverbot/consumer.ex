@@ -31,8 +31,8 @@ defmodule Niverbot.Consumer do
 
     cond do
       Niverbot.CommandHandler.is_valid_flag_command?(payload.content, flag) ->
-        Logger.warn("FLAG COMMAND RECIEVED")
-        message_opts = Niverbot.CommandHandler.call(payload.content, flag)
+        Logger.info("FLAG COMMAND RECIEVED")
+        message_opts = Niverbot.CommandHandler.call(payload, flag)
 
         Api.create_message!(payload.channel_id, message_opts)
 

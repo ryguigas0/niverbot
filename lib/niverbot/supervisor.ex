@@ -11,7 +11,8 @@ defmodule Niverbot.Supervisor do
   @impl true
   def init(_args) do
     children = [
-      Niverbot.Consumer
+      Niverbot.Consumer,
+      Niverbot.Repo
     ]
 
     Supervisor.init(children, strategy: :one_for_one)
