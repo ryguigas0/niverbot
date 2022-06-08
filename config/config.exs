@@ -11,5 +11,7 @@ config :nostrum,
     :message_content
   ]
 
+config :niverbot, Niverbot, flag: System.get_env("DISCORD_BOT_FLAG")
+
 # Configurations according to environment
 import_config("#{Mix.env()}.exs")

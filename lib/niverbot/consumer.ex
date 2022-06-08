@@ -1,4 +1,4 @@
-defmodule Template.Consumer do
+defmodule Niverbot.Consumer do
   @moduledoc """
   Discord event handler
   """
@@ -27,9 +27,17 @@ defmodule Template.Consumer do
   end
 
   def handle_event({:MESSAGE_CREATE, payload, _ws}) do
-    case payload.content do
-      "!ping" -> Api.create_message(payload.channel_id, content: "ponged!")
-      _ -> :ignore
+    flag = Application.get_env(:niverbot, Niverbot)[:flag]
+
+    cond do
+      Niverbot.CommandHandler.is_valid_flag_command?(payload.content, flag) ->
+        Logger.warn("FLAG COMMAND RECIEVED")
+        message_opts = Niverbot.CommandHandler.call(payload.content, flag)
+
+        Api.create_message!(payload.channel_id, message_opts)
+
+      true ->
+        :ignore
     end
   end
 

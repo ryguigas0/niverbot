@@ -1,6 +1,6 @@
-# Template
+# Niverbot
 
-An template for creating and running an elixir discord bot in railway
+An Niverbot for creating and running an elixir discord bot in railway
 
 ## Local setup
 
@@ -12,4 +12,4 @@ An template for creating and running an elixir discord bot in railway
 ## Railway setup
 Use this button to
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/-dwGnw?referralCode=OXpg0O)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/Niverbot/-dwGnw?referralCode=OXpg0O)

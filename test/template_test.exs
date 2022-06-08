@@ -1,4 +1,4 @@
-defmodule TemplateTest do
+defmodule NiverbotTest do
   use ExUnit.Case
-  doctest Template
+  doctest Niverbot
 end

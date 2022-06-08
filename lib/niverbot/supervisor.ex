@@ -1,4 +1,4 @@
-defmodule Template.Supervisor do
+defmodule Niverbot.Supervisor do
   @moduledoc """
   Consumer initializer
   """
@@ -11,7 +11,7 @@ defmodule Template.Supervisor do
   @impl true
   def init(_args) do
     children = [
-      Template.Consumer
+      Niverbot.Consumer
     ]
 
     Supervisor.init(children, strategy: :one_for_one)
